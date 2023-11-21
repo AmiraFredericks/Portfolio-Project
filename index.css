@@ -1,0 +1,177 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/* Header and Navigation Bar */
+header {
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart a {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/IMG_7783.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 300px 0;
+    text-align: center;
+}
+
+/* Featured Products */
+.featured-products {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Promotions */
+.promotions {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Blog Section */
+.blog {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Newsletter Signup */
+.newsletter {
+    background: #eee;
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+    max-width: 80%;
+}
+
+.newsletter form button {
+    padding: 10px 20px;
+    background: #f78fb3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+* General Link Styles */
+a {
+    text-decoration: none;
+    color: inherit; /* This makes the link color inherit from the parent element */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Navigation Link Hover */
+nav ul li a:hover {
+    color: #ff69b4; /* Change to your preferred hover color, e.g., Hot Pink */
+    text-decoration: underline; /* Optional: Adds an underline on hover */
+}
+
+/* Footer Link Hover */
+footer a:hover {
+    color: #ff1493; /* Change to your preferred hover color, e.g., Deep Pink */
+}
+
+/* Search Button Hover (Updating previous style) */
+.search-container button:hover {
+    background-color: #ff1493; /* Example: Deep Pink */
+    /* Add other hover styles if needed */
+}
+
+/* Any additional specific link hover styles can be added similarly */
+
+/* Footer */
+footer {
+    background: #FF1493;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
